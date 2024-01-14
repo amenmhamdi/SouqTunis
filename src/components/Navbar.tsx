@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Cart from './Cart'
 import { Icons } from './Icons'
 import MaxWidthWrapper from './MaxWidthWrapper'
+import MobileNav from './MobileNav'
 import NavItems from './NavItems'
 import UserAccountNav from './UserAccountNav'
 import { buttonVariants } from './ui/button'
@@ -18,6 +19,7 @@ const Navbar = async () => {
                 <MaxWidthWrapper>
                     <div className='border-b border-gray-200'>
                         <div className='flex h-16 items-center'>
+                        <MobileNav />
 
                             <div className='ml-4 flex lg:ml-0'>
                                 <Link href='/'>

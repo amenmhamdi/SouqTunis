@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Providers from '@/components/Providers'
 import { cn } from '@/lib/utils'
@@ -31,6 +32,7 @@ export default function RootLayout({
             <div className='flex-grow flex-1'>
               {children}
             </div>
+            <Footer />
           </Providers>
         </main>
         <Toaster position='top-center' richColors />

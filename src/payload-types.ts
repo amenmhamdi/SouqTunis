@@ -19,8 +19,9 @@ export interface Config {
   globals: {};
 }
 export interface User {
-  products: never[];
   id: string;
+  products?: (string | Product)[] | null;
+  product_files?: (string | ProductFile)[] | null;
   role: 'admin' | 'user';
   updatedAt: string;
   createdAt: string;
